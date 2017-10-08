@@ -12,11 +12,15 @@ namespace proyecto
 {
     public partial class SignUp : Form
     {
+<<<<<<< HEAD
         
+=======
+>>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
         public SignUp()
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
         private Usuario obj;
         private void label4_Click(object sender, EventArgs e)
         {
@@ -70,5 +74,7 @@ namespace proyecto
             Form1 obj = new Form1();
             obj.Show();
         }
+=======
+>>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
     }
 }
