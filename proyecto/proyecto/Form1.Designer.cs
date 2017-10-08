@@ -34,10 +34,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
+
             this.textBox3 = new System.Windows.Forms.TextBox();
-=======
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
+
+
             this.SuspendLayout();
             // 
             // label1
@@ -99,7 +99,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-<<<<<<< HEAD
+
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Menu;
@@ -111,17 +111,13 @@
             this.textBox3.Size = new System.Drawing.Size(100, 19);
             this.textBox3.TabIndex = 6;
             // 
-=======
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 340);
-<<<<<<< HEAD
+
             this.Controls.Add(this.textBox3);
-=======
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
@@ -143,10 +139,10 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-<<<<<<< HEAD
+
         private System.Windows.Forms.TextBox textBox3;
-=======
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
+
+
     }
 }
 

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,14 +44,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-=======
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(30, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
@@ -190,19 +186,16 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(268, 19);
             this.textBox6.TabIndex = 15;
-=======
             this.label1.Location = new System.Drawing.Point(178, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
             // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(414, 494);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -219,9 +212,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-=======
             this.ClientSize = new System.Drawing.Size(545, 494);
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
             this.Controls.Add(this.label1);
             this.Name = "SignUp";
             this.Text = "SignUp";
@@ -233,7 +224,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-<<<<<<< HEAD
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -249,7 +239,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-=======
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
     }
 }

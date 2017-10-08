@@ -8,7 +8,6 @@ namespace proyecto
 {
     class Usuario
     {
-<<<<<<< HEAD
         //atributos
         private string name;
         private string lastname;
@@ -42,7 +41,6 @@ namespace proyecto
         {
             return this.lastname;
         }
-=======
         private string user;
         private string password;
         public Usuario(string user, string password)
@@ -50,14 +48,12 @@ namespace proyecto
             this.user = password;
             this.password = password;
         }
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
         public void setUser(string user)
         {
             this.user = user;
         }
         public string getUser()
         {
-<<<<<<< HEAD
             return this.user;
         }
         public void setJob(int job)
@@ -67,9 +63,7 @@ namespace proyecto
         public int getJob()
         {
             return this.job;
-=======
-            return user;
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
+            return job;
         }
         public void setPassword(string password)
         {
@@ -79,9 +73,5 @@ namespace proyecto
         {
             return password;
         }
-<<<<<<< HEAD
-        
-=======
->>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
     }
 }
