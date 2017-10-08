@@ -112,7 +112,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 340);
+<<<<<<< HEAD
             this.Controls.Add(this.textBox3);
+=======
+>>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
@@ -134,7 +137,10 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBox3;
+=======
+>>>>>>> 684caf237c61338eee419c08678957cea6c73cf1
     }
 }
 
