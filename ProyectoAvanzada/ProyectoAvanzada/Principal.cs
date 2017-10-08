@@ -16,5 +16,17 @@ namespace ProyectoAvanzada
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        //boton de slaida del menu principal
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 obj = new Form1();
+            obj.Show();
+        }
     }
 }

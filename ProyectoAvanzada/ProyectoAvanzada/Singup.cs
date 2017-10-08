@@ -17,14 +17,19 @@ namespace ProyectoAvanzada
         {
             InitializeComponent();
         }
-
+        //boton de salir del signup
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
             Form1 obj = new Form1();
             obj.Show();
         }
-
+        //boton aceptar
+        /*valida que todos los datos esten llenos
+         * y manda a llamar al arreglo de usuario para agragar uno nuevo
+         * si no esta llenos infoma que tiene que llenar todos los campos
+         * 
+        */ 
         private void button1_Click(object sender, EventArgs e)
         {
             //1 diputado, 2 asesor   
@@ -54,7 +59,7 @@ namespace ProyectoAvanzada
             if (allright == 2)
             {
                 allright = 0;
-                obj = new Usuario(textBox1.Text, textBox2.Text, textBox3.Text, job, textBox4.Text);
+                obj =  new Usuario (textBox1.Text, textBox2.Text, textBox3.Text, job, textBox4.Text);
                 Goathemala.addPolitico(obj);
                 Principal main = new Principal();
                 main.Show();
@@ -65,6 +70,11 @@ namespace ProyectoAvanzada
             {
                 textBox6.Text = "revise que todos los datos esten bien";
             }
+        }
+
+        private void Singup_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

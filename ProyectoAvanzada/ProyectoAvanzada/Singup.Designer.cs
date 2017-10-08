@@ -179,9 +179,11 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(155, 470);
+            this.textBox6.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Location = new System.Drawing.Point(79, 470);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 26);
+            this.textBox6.Size = new System.Drawing.Size(260, 19);
             this.textBox6.TabIndex = 15;
             // 
             // Singup
@@ -207,6 +209,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Singup";
             this.Text = "Singup";
+            this.Load += new System.EventHandler(this.Singup_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,13 +16,17 @@ namespace ProyectoAvanzada
         {
             InitializeComponent();
         }
-
+        /*boton de login
+         * captura los datos
+         * valida bajo una condicion booleana
+         *
+       */
         private void button2_Click(object sender, EventArgs e)
         {
             string user = textBox1.Text;
             string password = textBox2.Text;
-            bool permitir = Goathemala.buscar(user, password);
-            if (permitir = true)
+            bool permitir = Goathemala.find(user, password);
+            if (permitir == true)
             {
                 this.Hide();
                 Principal obj = new Principal();
@@ -33,12 +37,17 @@ namespace ProyectoAvanzada
                 textBox3.Text = "datos invalidos";
             }            
         }
-
+        //boton de sign up 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Singup sign = new Singup();
             sign.Show();
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

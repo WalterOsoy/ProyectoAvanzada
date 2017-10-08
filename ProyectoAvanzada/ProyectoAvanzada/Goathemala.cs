@@ -8,25 +8,27 @@ namespace ProyectoAvanzada
 {
     class Goathemala
     {
+        //atributos
         private static Usuario[] congreso = new Usuario[100];
-        private static int cont = 0;
+        private static int cont = -1;
         //agrega un nuevo usuario 
         public static void addPolitico(Usuario politicos)
         {
-            congreso[cont] = politicos;
             cont++;
+            congreso[cont] = politicos;           
         }
         //codigo para el inicio de secion
-        public static bool buscar(string name, string password)
+        public static bool find(string name, string password)
         {
             bool permitido = false;
-            for (int i = 0; i < congreso.Length; i++)
+            for (int i = 0; i < cont; i++)
             {
                 if (name == congreso[i].getUser())
                 {
                     if (password.Equals(congreso[i].getPassword()))
                     {
                         permitido = true;
+                        return permitido;
                     }
                 }
             }
