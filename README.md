@@ -71,7 +71,7 @@ Sistema de control y préstamo de leyes y reglamentos de la república - SisLey
 
    6.2 Se crea el constructor de la clase Usuario.
    
-   ![](ProyectoPrograFotos/15png)
+   ![](ProyectoPrograFotos/15.png)
     
    6.3 Se escriben los get y set de los atributos de class. 
    
