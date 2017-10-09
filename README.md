@@ -10,7 +10,7 @@ Sistema de control y préstamo de leyes y reglamentos de la república - SisLey
 
    1.1 Se inicializa el formulario. 
    
-    ![](ProyectoPrograFotos/1.png)
+   ![](ProyectoPrograFotos/1.png)
     
    1.2 Se inicializa el boton de Log in, en donde se capturan los datos por medio de un boolean.
    
