@@ -53,6 +53,13 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Goathemala.cs" />
+    <Compile Include="Ley.cs" />
+    <Compile Include="leyes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leyes.Designer.cs">
+      <DependentUpon>leyes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +68,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reglamento.cs" />
+    <Compile Include="Reglas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reglas.Designer.cs">
+      <DependentUpon>Reglas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Singup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +84,9 @@
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leyes.resx">
+      <DependentUpon>leyes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -83,6 +100,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reglas.resx">
+      <DependentUpon>Reglas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Singup.resx">
       <DependentUpon>Singup.cs</DependentUpon>
     </EmbeddedResource>

@@ -58,12 +58,17 @@ namespace ProyectoAvanzada
             }
             if (allright == 2)
             {
-                allright = 0;
-                obj =  new Usuario (textBox1.Text, textBox2.Text, textBox3.Text, job, textBox4.Text);
-                Goathemala.addPolitico(obj);
-                Principal main = new Principal();
-                main.Show();
-                this.Hide();
+                if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" &&  textBox4.Text != "" ) {
+                    allright = 0;
+                    obj = new Usuario(textBox1.Text, textBox2.Text, textBox3.Text, job, textBox4.Text);
+                    Goathemala.addPolitico(obj);
+                    Principal main = new Principal();
+                    main.Show();
+                    this.Hide();
+                }else
+                {
+                    textBox6.Text = "revise que todos los datos esten bien";
+                }
 
             }
             else
@@ -73,6 +78,11 @@ namespace ProyectoAvanzada
         }
 
         private void Singup_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

@@ -21,7 +21,7 @@ namespace ProyectoAvanzada
         public static bool find(string name, string password)
         {
             bool permitido = false;
-            for (int i = 0; i < cont; i++)
+            for (int i = 0; i <= cont; i++)
             {
                 if (name == congreso[i].getUser())
                 {
