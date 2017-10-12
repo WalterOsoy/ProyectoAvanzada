@@ -107,9 +107,9 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(132, 24);
             this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Parlamentario";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -118,7 +118,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(84, 24);
             this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Asesor";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
@@ -181,10 +180,12 @@
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(79, 470);
+            this.textBox6.Location = new System.Drawing.Point(12, 470);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(260, 19);
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(432, 19);
             this.textBox6.TabIndex = 15;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Singup
             // 

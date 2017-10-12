@@ -25,7 +25,10 @@ namespace ProyectoAvanzada
         {
             string user = textBox1.Text;
             string password = textBox2.Text;
-            bool permitir = Goathemala.find(user, password);
+            bool permitir = false;
+            permitir = Goathemala.find(user, password);
+            textBox1.Clear();
+            textBox2.Clear();
             if (permitir == true)
             {
                 this.Hide();
@@ -47,6 +50,11 @@ namespace ProyectoAvanzada
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

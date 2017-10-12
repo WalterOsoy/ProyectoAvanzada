@@ -97,9 +97,10 @@
             this.textBox3.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(99, 375);
+            this.textBox3.Location = new System.Drawing.Point(12, 375);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(281, 19);
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(455, 19);
             this.textBox3.TabIndex = 6;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -118,6 +119,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
