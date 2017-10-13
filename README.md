@@ -6,7 +6,7 @@ Sistema de control y préstamo de leyes y reglamentos de la república - SisLey
 
 # -------------------Bitacora-------------------
 
-### 1. Log in / Sign up.
+### 1. Class Form1.
 
    1.1 Se inicializa el formulario. 
    
