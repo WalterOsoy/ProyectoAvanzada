@@ -32,7 +32,8 @@ namespace ProyectoAvanzada
             if (permitir == true)
             {
                 this.Hide();
-                Principal obj = new Principal();
+                leyes obj = new leyes();
+                obj.tabControl1.SelectTab(6);
                 obj.Show();
             }
             else

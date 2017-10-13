@@ -62,10 +62,12 @@ namespace ProyectoAvanzada
                     allright = 0;
                     obj = new Usuario(textBox1.Text, textBox2.Text, textBox3.Text, job, textBox4.Text);
                     Goathemala.addPolitico(obj);
-                    Principal main = new Principal();
-                    main.Show();
                     this.Hide();
-                }else
+                    leyes main = new leyes();
+                    main.tabControl1.SelectTab(6);
+                    main.Show();
+                }
+                else
                 {
                     textBox6.Text = "revise que todos los datos esten bien";
                 }
