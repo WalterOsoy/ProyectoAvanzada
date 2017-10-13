@@ -35,5 +35,10 @@ namespace ProyectoAvanzada
         {
             return this.info;
         }
+        
+        public int getCopias()
+        {
+            return this.copias;
+        }
     }
 }

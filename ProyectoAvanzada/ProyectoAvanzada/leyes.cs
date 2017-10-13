@@ -116,6 +116,8 @@ namespace ProyectoAvanzada
                 listBox1.Items.Add("Ley No. " + cont);
                 listBox1.Items.Add("Titulo: " + leys[cont - 1].getTitulo());
                 listBox1.Items.Add("Descripción: " + leys[cont - 1].getInfo());
+                listBox1.Items.Add("cantidad de copias: " + leys[cont - 1].getCopias());
+                listBox1.Items.Add("");
                 cont++;
             }
         }
@@ -172,6 +174,31 @@ namespace ProyectoAvanzada
             comboBox4.SelectedIndex = -1;
             numleyes--;
         }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int ley = comboBox2.SelectedIndex;
+            switch (ley)
+            {
+                case 0://creacion                    
+                    tabControl1.SelectTab(7);
+                    break;
+                case 1://modificacion 
+
+                    break;
+                case 2:// eliminacion 
+
+                    break;
+                case 3://prestar                    
+
+                    break;
+                case 4://devolver                    
+
+                    break;
+                default:
+                    break;
+            }
+            comboBox2.SelectedIndex = -1;
+        }
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -212,6 +239,9 @@ namespace ProyectoAvanzada
 
         }
 
-       
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }        
     }
 }
