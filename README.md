@@ -66,7 +66,27 @@ Sistema de control y préstamo de leyes y reglamentos de la república - SisLey
    
    ![](ProyectoPrograFotos/16.png)
 
+## 6. Class Leyes.
 
+   6.1 Captura los datos de la nueva ley y los manda a la clase ley. 
+   
+   ![](ProyectoPrograFotos/captura.png)
+
+   6.2 Boton de mostrar las leyes; graba las leyes y sus descricion en una listbox.
+  
+   ![](ProyectoPrograFotos/mos.png)
+    
+   6.3 Agrega a un combo las leyes existentes y boton de modificar. 
+   
+   ![](ProyectoPrograFotos/box.png)
+
+   6.4 Menu de las posibles opciones en el combo box. 
+   
+   ![](ProyectoPrograFotos/men.png)
+   
+   6.5 Se agrega a un combo box las leyes que se desean eliminar y abajo en el codigo se elimina la ley. 
+   
+   ![](ProyectoPrograFotos/del.png)
 
 
 
