@@ -17,8 +17,23 @@ namespace ProyectoAvanzada
         public void addLey(string _titulo, string _info)
         {
             this.titulo = _titulo;
-            this.info = _info;
-                        
+            this.info = _info;                        
+        }
+        public void setTitulo(string nuevo)
+        {
+            this.titulo = nuevo;            
+        }
+        public string getTitulo()
+        {
+            return this.titulo;
+        }
+        public void setInfo(string info)
+        {
+            this.info = info;
+        }
+        public string getInfo()
+        {
+            return this.info;
         }
     }
 }

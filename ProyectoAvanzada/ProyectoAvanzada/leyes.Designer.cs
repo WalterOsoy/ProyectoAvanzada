@@ -49,11 +49,22 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -64,6 +75,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Location = new System.Drawing.Point(0, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -218,6 +230,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(422, 28);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -257,7 +270,8 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.textBox5);
+            this.tabPage6.Controls.Add(this.button5);
+            this.tabPage6.Controls.Add(this.listBox1);
             this.tabPage6.Location = new System.Drawing.Point(4, 29);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(452, 400);
@@ -266,16 +280,120 @@
             this.tabPage6.UseVisualStyleBackColor = true;
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
-            // textBox5
+            // listBox1
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(8, 19);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(436, 303);
-            this.textBox5.TabIndex = 0;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(8, 14);
+            this.listBox1.MultiColumn = true;
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(436, 324);
+            this.listBox1.TabIndex = 0;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(163, 355);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(112, 28);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Volver";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.button8);
+            this.tabPage7.Controls.Add(this.button6);
+            this.tabPage7.Controls.Add(this.button7);
+            this.tabPage7.Controls.Add(this.comboBox2);
+            this.tabPage7.Controls.Add(this.label6);
+            this.tabPage7.Controls.Add(this.comboBox3);
+            this.tabPage7.Controls.Add(this.label7);
+            this.tabPage7.Controls.Add(this.label8);
+            this.tabPage7.Location = new System.Drawing.Point(4, 29);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(452, 400);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Principal";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(235, 244);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(151, 37);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "Ver Reglamentos";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(272, 114);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(114, 37);
+            this.button7.TabIndex = 15;
+            this.button7.Text = "Ver leyes";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(33, 249);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 28);
+            this.comboBox2.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(28, 192);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(156, 29);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Reglamentos";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(33, 119);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 28);
+            this.comboBox3.TabIndex = 12;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(28, 67);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 29);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Leyes";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Script MT Bold", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(267, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(182, 67);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "SisLey";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(151, 333);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(128, 44);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "Salir";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // leyes
             // 
@@ -292,7 +410,8 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -319,6 +438,16 @@
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button8;
     }
 }
