@@ -6,7 +6,7 @@ Sistema de control y préstamo de leyes y reglamentos de la república - SisLey
 
 # -------------------Bitacora-------------------
 
-### 1. Log in / Sign up.
+### 1. Class Form1.
 
    1.1 Se inicializa el formulario. 
    
@@ -41,7 +41,7 @@ Sistema de control y préstamo de leyes y reglamentos de la república - SisLey
    
    ![](ProyectoPrograFotos/7.png)
    
-## 4. Class Principal.
+## 4. Class Sing Up.
    
    4.1 Boton de salida del sign up.
    
@@ -52,28 +52,17 @@ Sistema de control y préstamo de leyes y reglamentos de la república - SisLey
    ![](ProyectoPrograFotos/9.png)
    ![](ProyectoPrograFotos/10.png)
     
-## 5. Class Sign Up.
+## 5. Class Usuario.
 
-   5.1 se crea el boton de salir del Sign Up. 
-   
-   ![](ProyectoPrograFotos/11.png)
-
-   5.2 Se creal el boton de aceptar para el registro del nuevo usuario, si falta informacion sale una alerta de llenar todos los datos y si todo se encuentra bien manda a llamar al arreglo para almacenar el nuevo usuario.
-   
-   ![](ProyectoPrograFotos/12.png)
-   ![](ProyectoPrograFotos/13.png)
-
-## 6. Class Usuario.
-
-   6.1 Se crean los atributos de la clase usuario. 
+   5.1 Se crean los atributos de la clase usuario. 
    
    ![](ProyectoPrograFotos/14.png)
 
-   6.2 Se crea el constructor de la clase Usuario.
+   5.2 Se crea el constructor de la clase Usuario.
    
    ![](ProyectoPrograFotos/15.png)
     
-   6.3 Se escriben los get y set de los atributos de class. 
+   5.3 Se escriben los get y set de los atributos de class. 
    
    ![](ProyectoPrograFotos/16.png)
 
