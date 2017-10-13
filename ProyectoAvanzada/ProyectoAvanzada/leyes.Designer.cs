@@ -49,9 +49,10 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -59,10 +60,14 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +86,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(460, 433);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -170,6 +176,7 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mofidicacion";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // button4
             // 
@@ -179,6 +186,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Guardar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -197,6 +205,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(417, 82);
             this.textBox4.TabIndex = 5;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label5
             // 
@@ -206,6 +215,7 @@
             this.label5.Size = new System.Drawing.Size(152, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Cambiar descripcion";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox3
             // 
@@ -213,6 +223,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(422, 26);
             this.textBox3.TabIndex = 3;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 
@@ -222,6 +233,7 @@
             this.label4.Size = new System.Drawing.Size(106, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "Cambiar titulo";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // comboBox1
             // 
@@ -240,9 +252,14 @@
             this.label3.Size = new System.Drawing.Size(137, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Leyes Disponibles";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button10);
+            this.tabPage3.Controls.Add(this.button9);
+            this.tabPage3.Controls.Add(this.comboBox4);
+            this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(452, 400);
@@ -280,16 +297,6 @@
             this.tabPage6.UseVisualStyleBackColor = true;
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(8, 14);
-            this.listBox1.MultiColumn = true;
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(436, 324);
-            this.listBox1.TabIndex = 0;
-            // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(163, 355);
@@ -299,6 +306,16 @@
             this.button5.Text = "Volver";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(8, 14);
+            this.listBox1.MultiColumn = true;
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(436, 324);
+            this.listBox1.TabIndex = 0;
             // 
             // tabPage7
             // 
@@ -316,6 +333,16 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Principal";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(151, 333);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(128, 44);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "Salir";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button6
             // 
@@ -385,15 +412,43 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "SisLey";
             // 
-            // button8
+            // comboBox4
             // 
-            this.button8.Location = new System.Drawing.Point(151, 333);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(128, 44);
-            this.button8.TabIndex = 17;
-            this.button8.Text = "Salir";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(12, 125);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(422, 28);
+            this.comboBox4.TabIndex = 3;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 85);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(184, 20);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Leyes posibles a eliminar";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(79, 236);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(91, 34);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "Volver";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(235, 236);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(88, 34);
+            this.button10.TabIndex = 5;
+            this.button10.Text = "Eliminar";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // leyes
             // 
@@ -409,6 +464,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
@@ -449,5 +506,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
     }
 }
