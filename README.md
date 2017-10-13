@@ -72,7 +72,7 @@ Sistema de control y préstamo de leyes y reglamentos de la república - SisLey
    
    ![](ProyectoPrograFotos/captura.png)
 
-   6.2 Boton de mostrar las leyes; graba las leyes y sus descricion en una listbox.
+   6.2 Boton de mostrar las leyes; graba las leyes y sus descripción en una listbox.
   
    ![](ProyectoPrograFotos/mos.png)
     
